@@ -298,7 +298,7 @@
     </section>
 
     <!-- Section 3 kim -->
-    <section id="packages" class="w-full font-poppins">
+    <section id="packages" class="w-full font-poppins flex justify-center">
       <div
         class="container w-fit mx-[10%] mt-[54px] pb-[40px] max-sm:mx-auto flex flex-col justify-between items-center"
       >
@@ -325,7 +325,12 @@
               class="w-[415px] h-[62px] ml-[10px] flex justify-between items-center mt-[24px]"
             >
               <div class="flex gap-2 items-start">
-                <img src="Location.svg" alt="location" width="24" height="24" />
+                <img
+                  src="./kim/Location.svg"
+                  alt="location"
+                  width="24"
+                  height="24"
+                />
                 <div>
                   <h1 class="text-[24px] font-[600]">Eiffel Tower</h1>
                   <p class="font-dm-sans text-[18px] font-[400] text-[#5A7184]">
@@ -333,11 +338,16 @@
                   </p>
                 </div>
               </div>
-              <img src="Group 8260.svg" alt="5-star" width="120" height="20" />
+              <img
+                src="./kim/Group 8260.svg"
+                alt="5-star"
+                width="120"
+                height="20"
+              />
             </div>
           </div>
 
-          <div id="big-bear-lake" class="relative">
+          <div id="big-bear-lake" class="relative max-[1200px]:hidden">
             <div
               id="rectangle"
               class="w-[453px] h-[520px] bg-[#C4C4C4] border-0 rounded-[20px] mt-[-40px]"
@@ -354,7 +364,12 @@
               class="w-[415px] h-[62px] ml-[10px] flex justify-between items-center mt-[24px]"
             >
               <div class="flex gap-2 items-start">
-                <img src="Location.svg" alt="location" width="24" height="24" />
+                <img
+                  src="./kim/Location.svg"
+                  alt="location"
+                  width="24"
+                  height="24"
+                />
                 <div>
                   <h1 class="text-[24px] font-[600]">Big Bear Lake</h1>
                   <p class="font-dm-sans text-[18px] font-[400] text-[#5A7184]">
@@ -362,11 +377,16 @@
                   </p>
                 </div>
               </div>
-              <img src="Group 8260.svg" alt="5-star" width="120" height="20" />
+              <img
+                src="./kim/Group 8260.svg"
+                alt="5-star"
+                width="120"
+                height="20"
+              />
             </div>
           </div>
 
-          <div id="colorado-spring" class="relative">
+          <div id="colorado-spring" class="relative max-[1800px]:hidden">
             <div
               id="rectangle"
               class="w-[453px] h-[520px] bg-[#C4C4C4] border-0 rounded-[20px]"
@@ -383,7 +403,12 @@
               class="w-[415px] h-[62px] ml-[10px] flex justify-between items-center mt-[24px]"
             >
               <div class="flex gap-2 items-start">
-                <img src="Location.svg" alt="location" width="24" height="24" />
+                <img
+                  src="./kim/Location.svg"
+                  alt="location"
+                  width="24"
+                  height="24"
+                />
                 <div>
                   <h1 class="text-[24px] font-[600]">Colorado Springs</h1>
                   <p class="font-dm-sans text-[18px] font-[400] text-[#5A7184]">
@@ -391,41 +416,35 @@
                   </p>
                 </div>
               </div>
-              <img src="Group 8260.svg" alt="5-star" width="120" height="20" />
+              <img
+                src="./kim/Group 8260.svg"
+                alt="5-star"
+                width="120"
+                height="20"
+              />
             </div>
           </div>
         </div>
-
-        <div
-          class="w-[180px] h-[70px] bg-[#FE5B3E] border rounded-[15px] flex justify-center items-center mt-[40px]"
-        >
-          <img src="Group 5804.svg" alt="view-all" />
-        </div>
+        <button type="button">
+          <div
+            class="w-[180px] h-[70px] bg-[#FE5B3E] border rounded-[15px] flex justify-center items-center mt-[40px]"
+          >
+            <img src="./kim/Group 5804.svg" alt="view-all" />
+          </div>
+        </button>
       </div>
-      <style>
-        @media only screen and (max-width: 1800px) {
-          #colorado-spring {
-            display: none;
-          }
-        }
-        @media only screen and (max-width: 1200px) {
-          #big-bear-lake {
-            display: none;
-          }
-        }
-      </style>
     </section>
 
     <!-- Section 4 kim -->
     <section
       id="destination"
-      class="w-[1920px] h-[888px] font-poppins bg-[#FEF9F3] flex flex-col min-[1000px]:flex-row gap-[30px] items-center relative"
+      class="w-screen h-[1094px] min-[1000px]:h-[888px] font-poppins bg-[#FEF9F3] flex flex-col max-[1000px]:justify-center min-[1000px]:flex-row gap-[30px] items-center relative"
     >
       <div
         id="box-item"
-        class="min-[1000px]:absolute w-[574px] h-[406px] left-[1096px] flex flex-col justify-between z-10"
+        class="min-[1000px]:absolute w-[574px] h-[406px] max-[1000px]:w-[324px] max-[1000px]:h-[284px] left-[1096px] flex flex-col justify-center z-10"
       >
-        <h1 class="text-[48px] font-[700]">
+        <h1 class="text-[48px] font-[700] max-[1000px]:text-[24px]">
           Most Popular <br />
           Destination of Us!
         </h1>
@@ -434,14 +453,17 @@
           users. Uniquely simplify mission-critical benefits with cross-unit
           manufactured products. Energistically re-engineer
         </p>
-        <div
-          class="w-[180px] h-[70px] bg-[#FE5B3E] border rounded-[15px] flex justify-center items-center"
-        >
-          <img src="Group 5804.svg" alt="view-all" />
-        </div>
+
+        <button type="button">
+          <div
+            class="max-[1000px]:hidden w-[180px] h-[70px] bg-[#FE5B3E] border rounded-[15px] flex justify-center items-center"
+          >
+            <img src="./kim/Group 5804.svg" alt="view-all" />
+          </div>
+        </button>
       </div>
 
-      <div id="Great Wall of China" class="relative min-[650px]:ml-[-110px]">
+      <div id="Great Wall of China" class="relative min-[1000px]:ml-[-110px]">
         <div
           id="rectangle"
           class="w-[332px] h-[450px] bg-[#C4C4C4] border-0 rounded-[20px]"
@@ -456,12 +478,17 @@
                 Beijing, China
               </p>
             </div>
-            <img src="Group 8271.svg" alt="5-star" width="57" height="28" />
+            <img
+              src="./kim/Group 8271.svg"
+              alt="5-star"
+              width="57"
+              height="28"
+            />
           </div>
         </div>
       </div>
 
-      <div id="Lake Powell" class="relative hidden min-[650px]:block">
+      <div id="Lake Powell" class="relative hidden min-[1000px]:block">
         <div
           id="rectangle"
           class="w-[332px] h-[450px] bg-[#C4C4C4] border-0 rounded-[20px] mt-[-40px]"
@@ -476,7 +503,12 @@
                 U.S.A
               </p>
             </div>
-            <img src="Group 8271.svg" alt="5-star" width="57" height="28" />
+            <img
+              src="./kim/Group 8271.svg"
+              alt="5-star"
+              width="57"
+              height="28"
+            />
           </div>
         </div>
       </div>
@@ -496,18 +528,35 @@
                 Maryland
               </p>
             </div>
-            <img src="Group 8271.svg" alt="5-star" width="57" height="28" />
+            <img
+              src="./kim/Group 8271.svg"
+              alt="5-star"
+              width="57"
+              height="28"
+            />
           </div>
         </div>
       </div>
 
       <img
-        src="Arrow.svg"
+        src="./kim/Arrow.svg"
         alt="arrow"
         width="110"
         height="48"
-        class="absolute top-[680px] left-[361px]"
+        class="min-[1000px]:absolute top-[680px] left-[361px] max-[1000px]:hidden"
       />
+      <img
+        src="./kim/Group 5829.svg"
+        alt="3-dot"
+        class="hidden max-[1000px]:block"
+      />
+      <button type="button">
+        <div
+          class="min-[1000px]:hidden w-[180px] h-[70px] bg-[#FE5B3E] border rounded-[15px] flex justify-center items-center"
+        >
+          <img src="./kim/Group 5804.svg" alt="view-all" />
+        </div>
+      </button>
     </section>
 
     <!-- Section 5 RcNon -->
