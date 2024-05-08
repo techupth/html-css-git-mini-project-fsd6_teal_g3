@@ -31,24 +31,24 @@
   <body>
     <!-- Section 1: Ja - Header -->
     <header class="w-screen flex mb-[170px]">
-      <div id="bg" class="w-screen relative h-[96vh] max-[1400px]:h-[1350px]">
+      <div id="bg" class="w-full relative h-[100vh] max-[1400px]:h-[1350px] max-[375px]:h-[1100px]">
         <img
           src="./ja-png/BG.png"
-          class="w-full h-full min-w-[1920px] absolute z-1 top-0 left-0"
+          class="w-full h-full min-h-[900px] min-w-[1920px] max-[375px]:w-[375px] absolute z-1 top-0 left-0"
         />
         <div
           id="bg-gradient"
-          class="absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-l from-white to-[rgb(252,254,255,0.8)]"
+          class="absolute z-10 top-0 left-0 w-full h-full min-h-[900px] bg-gradient-to-l from-white from-0% to-80% to-[rgb(252,254,255,0.8)]"
         ></div>
       </div>
       <section
         id="header-container"
-        class="absolute  z-20 top-0 flex flex-col h-fit px-[10%] w-screen p-0 m-0 gap-20"
+        class="absolute z-20 top-0 flex flex-col h-fit px-[10%] w-screen p-0 m-0 gap-20 max-[375px]:gap-6"
       >
         <nav
           class="flex justify-between items-center p-0 w-full h-[120px] min-h-[80px]"
         >
-          <img src="./ja-png/logo.png" />
+          <img src="./ja-png/logo.png" class="max-[375px]:w-[73px]"/>
           <div id="menu" class="w-[446px] max-[1000px]:hidden">
             <ul
               class="flex justify-between font-medium text-lg text-[#a8a8a8] font-dm-sans"
@@ -77,17 +77,19 @@
         </nav>
         <div
           id="main container"
-          class="w-full h-fit max-[1400px]:flex-col-reverse max-[1400px]:justify-normol flex justify-between items-center max-[1400px]:relative"
+          class="w-full h-fit max-[1400px]:flex-col-reverse max-[1400px]:justify-normol flex justify-between items-center max-[1400px]:relative "
         >
           <main class="w-[505px] h-[330px] flex flex-col max-[1400px]:self-start">
             <h1
-              class="w-full h-[220px] text-[#221314] text-[100px] font-normal leading-[110px] self-center m-7 font-paytone-one mt-10 max-[1400px]:text-5xl max-[1400px]:leading-snug max-[1400px]:mt-28 max-[1400px]:m-5"
+              class="w-full h-[220px] text-[#221314] text-[100px] font-normal leading-[110px] self-center m-7 font-paytone-one mt-10 max-[1400px]:text-5xl max-[1400px]:leading-snug max-[1400px]:mt-28 max-[1400px]:m-5 max-[375px]:mt-[100px]
+              max-[375px]:text-[30px] max-[375px]:leading-10"
             >
               Fuel Mind <br />
               by Travel
             </h1>
             <p
-              class="max-[1400px]:self-start max-[1400px]:flex font-normal text-[20px] leading-10 text-[#5a7184] font-dm-sans max-[1400px]:text-[22px] max-[1400px]:leading-loose"
+              class="max-[1400px]:self-start max-[1400px]:flex font-normal text-[20px] leading-10 text-[#5a7184] font-dm-sans max-[1400px]:text-[22px] max-[1400px]:leading-loose
+              max-[375px]:text-[18px] max-[375px]:leading-9"
             >
               Enthusiastically extend extensive </br> customer service before best </br> 
               breed convergence completely.
@@ -97,17 +99,19 @@
             <div class="relative">
               <img
                 src="./ja-png/moon.png"
-                class="relative top-10 w-[90%] max-[480px]:hidden max-[1400px]:-mt-14 max-[1400px]:pl-12"
+                class="relative top-10 w-[fit] min-h-[230px] min-w-[325px] max-[1400px]:-mt-14 max-[1400px]:pl-12 max-[375px]:right-[18px] "
               />
               <div
                 id="box"
                 class="absolute 
+                max-[375px]:top-[45%] max-[375px]:-left-[4%] 
                 max-[1400px]:top-[39.5%] max-[1400px]:-left-[4.5%] 
-                top-[38%] -left-[12%] w-[23%] h-[33%] max-w-[145px] min-h-[130px] min-w-[115px] rounded-[10px] bg-white shadow-sm flex flex-col items-center p-3 gap-[4%] max-[480px]:hidden"
+                top-[37%] -left-[16%] w-[23%] h-[33%] max-w-[145px] min-h-[87px] min-[1400px]:w-[160px] max-[375px]:w-[76px] max-[375px]:h-[87px] rounded-[10px] bg-white shadow-sm flex flex-col items-center p-3 gap-[4%] max-[375px]:p-1.5"
               >
-                <div class="w-[100%] h-[100%] bg-[#c4c4c4] rounded-[6px]"></div>
+                <div class="w-[100%] h-[100%] max-h-[79px] min-w -[134px] bg-[#c4c4c4] rounded-[6px]
+                max-[375px]:h-[34px] max-[375px]:rounded-[3px]"></div>
                 <p
-                  class="font-dm-sans font-medium text-[10px] text-[#221314] self-start pl-[3%] mt-1"
+                  class="font-dm-sans font-medium text-[10px] text-[#221314] self-start pl-[3%] mt-1 max-[640px]:text-[4.88px]"
                 >
                   Mountain Scot
                 </p>
@@ -119,7 +123,7 @@
 
         <div
           id="find-location"
-          class="mt-14 max-[1400px]:mt-7 w-[1057px] h-[140px] rounded-[20px] bg-white shadow-[10px_30px_40px_-10px_rgba(0,0,0,0.05)] z-30 p-9 pl-16 max-[1400px]:px-0 flex justify-between items-center self-end max-[1400px]:flex-col max-[1400px]:w-full max-[1400px]:h-auto max-[1400px]:max-w-[400px] max-[1400px]:self-center"
+          class="mt-14 max-[1400px]:mt-7 max-[375px]:mt-2  w-[1057px] h-[140px] rounded-[20px] bg-white shadow-[10px_30px_40px_-10px_rgba(0,0,0,0.05)] z-30 p-9 pl-16 max-[1400px]:px-0 flex justify-between items-center self-end max-[1400px]:flex-col max-[1400px]:w-full max-[1400px]:h-auto max-[1400px]:max-w-[400px] max-[1400px]:self-center"
         >
           <div class="flex justify-center items-center max-[1400px]:flex-col">
             <div
