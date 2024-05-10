@@ -30,27 +30,13 @@
   
   <body>
     <!-- Section 1: Ja - Header -->
-    <header class="w-screen h-screen flex mb-[170px] max-[1400px]:h-[1500px] max-[375px]:h-[1050px]">
-      <div id="bg" class="w-full relative h-screen bg-no-repeat bg-center"
-      style="background: url('./ja-png/BG.png')">
-
-        <!-- <img
-          src="./ja-png/BG.png"
-          class="w-screen h-full  max-[375px]:w-[375px] absolute z-1 top-0 left-0"
-        /> -->
-        <div
-          id="bg-gradient"
-          class="absolute z-10 top-0 left-0 w-full h-full min-h-[900px] bg-gradient-to-l from-white from-0% to-80% to-[rgb(252,254,255,0.8)]"
+    <header class="w-screen h-fit">
+      <div class="bg-auto max-sm:bg-cover bg-no-repeat bg-center w-screen max-sm:h-[130vh] h-full absolute z-[-2]" style="background-image: url('./ja-png/BG.png')"></div>
+      <div class="bg-gradient bg-auto bg-no-repeat bg-center w-screen max-sm:h-[130vh] h-full absolute z-[-1] bg-gradient-to-l from-white from-0% to-80% to-[rgb(252,254,255,0.8)]"
         ></div>
-      </div>
-      <section
-        id="header-container"
-        class="absolute z-20 top-0 flex flex-col h-fit px-[10%] w-screen p-0 m-0 gap-20 max-[375px]:gap-6"
-      >
-        <nav
-          class="flex justify-between items-center p-0 w-full h-[120px] min-h-[80px]"
-        >
-          <img src="./ja-png/logo.png" class="max-[375px]:w-[73px]"/>
+      <div class="head-container mx-[10%] items-center flex flex-col">
+        <nav class="flex justify-between items-center h-28 w-full">
+          <div class="logo"><img src="./ja-png/logo.png" class="max-[375px]:w-[73px]"/></div>
           <div id="menu" class="w-[446px] max-[1000px]:hidden">
             <ul
               class="flex justify-between font-medium text-lg text-[#a8a8a8] font-dm-sans"
@@ -71,66 +57,44 @@
             </ul>
           </div>
           <button
-            class="h-[64px] w-[175px] rounded-[15px] p-3 bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] text-[16px] font-bold text-white font-dm-sans max-[1000px]:hidden"
+            class="h-[58px] w-[160px] rounded-xl p-1 bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] text-[16px] font-bold text-white font-dm-sans max-[1000px]:hidden"
           >
-            Contact Us
+            Contact Us</button>
+            <img src="./ja-png/menu-icon.png" class="min-[1000px]:hidden" />
           </button>
-          <img src="./ja-png/menu-icon.png" class="min-[1000px]:hidden" />
         </nav>
-        <div
-          id="main container"
-          class="w-full h-fit max-[1400px]:flex-col-reverse max-[1400px]:justify-normol flex justify-between items-center max-[1400px]:relative "
-        >
-          <main class="w-[505px] h-[330px] flex flex-col max-[1400px]:self-start">
-            <h1
-              class="w-full h-[220px] text-[#221314] text-[100px] font-normal leading-[110px] self-center m-7 font-paytone-one mt-10 max-[1400px]:text-5xl max-[1400px]:leading-snug max-[1400px]:mt-28 max-[1400px]:m-5 max-[375px]:mt-[100px]
-              max-[375px]:text-[30px] max-[375px]:leading-10"
-            >
-              Fuel Mind <br />
-              by Travel
-            </h1>
-            <p
-              class="max-[1400px]:self-start max-[1400px]:flex font-normal text-[20px] leading-10 text-[#5a7184] font-dm-sans max-[1400px]:text-[22px] max-[1400px]:leading-loose
-              max-[375px]:text-[18px] max-[375px]:leading-9"
-            >
-              Enthusiastically extend extensive </br> customer service before best </br> 
-              breed convergence completely.
-            </p>
-          </main>
-          <aside>
-            <div class="relative">
-              <img
+        <div class="hero-container flex flex-row justify-between max-md:flex-col-reverse max-md:items-center gap-20 mt-28 w-full">
+          <div class="hero-title-container flex flex-col justify-center gap-5 self-start sm:w-[45%] sm:self-center">
+            <h1 class="hero-title text-[#221314] font-paytone-one 
+            text-[5vw]
+            leading-tight">Fuel Mind <br />
+              by Travel</h1>
+            <p class="hero-subtitle text-[#5a7184] font-dm-sans text-lg max-xl:text-md leading-loose">Enthusiastically extend extensive <br class="sm:hidden" /> customer service <br class="max-sm:hidden" />before best <br class="sm:hidden" /> 
+            breed convergence completely.</p>
+          </div>
+          <div class="hero-moon-container sm:w-[45%] relative">
+            <img
                 src="./ja-png/moon.png"
-                class="relative top-10 w-[fit] min-h-[230px] min-w-[325px] max-[1400px]:-mt-14 max-[1400px]:pl-12 max-[375px]:right-[18px] "
+                class="w-[75%]"
               />
-              <div
-                id="box"
-                class="absolute 
-                max-[375px]:top-[45%] max-[375px]:-left-[4%] 
-                max-[1400px]:top-[39.5%] max-[1400px]:-left-[4.5%] 
-                top-[37%] -left-[16%] w-[23%] h-[33%] max-w-[145px] min-h-[87px] min-[1400px]:w-[160px] max-[375px]:w-[76px] max-[375px]:h-[87px] rounded-[10px] bg-white shadow-sm flex flex-col items-center p-3 gap-[4%] max-[375px]:p-1.5"
-              >
-                <div class="w-[100%] h-[100%] max-h-[79px] min-w -[134px] bg-[#c4c4c4] rounded-[6px]
-                max-[375px]:h-[34px] max-[375px]:rounded-[3px]"></div>
+            <div class="box-container w-[29%] h-[40%] absolute top-[30%] sm:left-[-20%] left-[-5%] rounded-md bg-white shadow-sm flex flex-col gap-2 items-left p-3 max-md:hidden max-sm:block">
+                <div class="w-[100%] h-[50%] bg-[#c4c4c4] rounded-md"></div>
                 <p
-                  class="font-dm-sans font-medium text-[10px] text-[#221314] self-start pl-[3%] mt-1 max-[640px]:text-[4.88px]"
+                  class="font-dm-sans font-medium text-[10px] text-[#221314] self-start pl-[3%]"
                 >
                   Mountain Scot
                 </p>
-                <img src="./ja-png/small-circle.png" />
+                <img src="./ja-png/small-circle.png" />              
               </div>
-            </div>
-          </aside>
-        </div>
-
-        <div
-          id="find-location"
-          class="mt-14 max-[1400px]:mt-7 max-[375px]:mt-2  w-[1057px] h-[140px] rounded-[20px] bg-white shadow-[10px_30px_40px_-10px_rgba(0,0,0,0.05)] z-30 p-9 pl-16 max-[1400px]:px-0 flex justify-between items-center self-end max-[1400px]:flex-col max-[1400px]:w-full max-[1400px]:h-auto max-[1400px]:max-w-[400px] max-[1400px]:self-center"
+              </div>  
+          </div>
+          <div
+          class="find-location w-[60vw] max-sm:w-[80vw] p-9 mt-[5%] flex self-end justify-between items-center bg-white shadow-[10px_30px_40px_-10px_rgba(0,0,0,0.05)] rounded-2xl max-lg:flex-col max-lg:self-center"
         >
-          <div class="flex justify-center items-center max-[1400px]:flex-col">
+          <div class="flex justify-center max-lg:items-center max-lg:flex-col">
             <div
               id="location-box"
-              class="w-fit h-[54px] flex flex-col justify-between pr-10 max-[1400px]:pr-0 max-[1400px]:mb-8"
+              class="w-auto h-[54px] flex flex-col justify-between px-10 max-[1400px]:px-0 max-[1400px]:mb-8 max-[1400px]:mt-5 max-[1400px]:items-center"
             >
               <div
                 id="topic-row"
@@ -138,25 +102,25 @@
               >
                 <p
                   id="topic"
-                  class="font-dm-sans font-bold text-[16px] max-[1400px]:text-[20px] text-[#a8a8a8]"
+                  class="font-dm-sans font-bold tex-sm text-[#a8a8a8]"
                 >
                   Location
                 </p>
                 <img src="./ja-png/arrow.png" class="w-fit h-fit pl-2" />
               </div>
               <p
-                class="w-auto h-[21px] font-dm-sans font-bold text-[16px] max-[1400px]:text-[20px] text-[#221314]"
+                class="w-auto h-[21px] font-dm-sans font-bold tex-sm text-[#221314]"
               >
                 Cox’s Bazar
               </p>
             </div>
             <img
               src="./ja-png/line.png"
-              class="h-[36px] mt-2.5 max-[1400px]:hidden"
+              class="h-[36px] mt-2.5 max-lg:hidden"
             />
             <img
               src="./ja-png/line-ho.png"
-              class="w-fit min-[1400px]:hidden"
+              class="w-fit lg:hidden"
             />
 
             <div
@@ -169,25 +133,25 @@
               >
                 <p
                   id="topic"
-                  class="font-dm-sans font-bold text-[16px] max-[1400px]:text-[20px] text-[#a8a8a8]"
+                  class="font-dm-sans font-bold tex-sm text-[#a8a8a8]"
                 >
                   Date
                 </p>
                 <img src="./ja-png/arrow.png" class="w-fit h-fit pl-2" />
               </div>
               <p
-                class="w-auto h-[21px] font-dm-sans font-bold text-[16px] max-[1400px]:text-[20px] text-[#221314]"
+                class="w-auto h-[21px] font-dm-sans font-bold tex-sm text-[#221314]"
               >
                 Mon, 14 Mar - Thu, 17 Mar
               </p>
             </div>
             <img
               src="./ja-png/line.png"
-              class="h-[36px] mt-2.5 max-[1400px]:hidden"
+              class="h-[36px] mt-2.5 max-lg:hidden"
             />
             <img
               src="./ja-png/line-ho.png"
-              class="w-fit min-[1400px]:hidden"
+              class="w-fit lg:hidden"
             />
             <div
               id="price-box"
@@ -199,14 +163,14 @@
               >
                 <p
                   id="topic"
-                  class="font-dm-sans font-bold text-[16px] max-[1400px]:text-[20px] text-[#a8a8a8]"
+                  class="font-dm-sans font-bold tex-sm text-[#a8a8a8]"
                 >
                   Avg. Price
                 </p>
                 <img src="./ja-png/arrow.png" class="w-fit h-fit pl-2" />
               </div>
               <p
-                class="w-auto h-[21px] font-dm-sans font-bold text-[16px] max-[1400px]:text-[20px] text-[#221314]"
+                class="w-auto h-[21px] font-dm-sans font-bold tex-sm text-[#221314]"
               >
                 $300 - $600
               </p>
@@ -219,12 +183,13 @@
             Explore <img src="./ja-png/arrow-white.png" />
           </button>
         </div>
-      </section>
+        </div>
+        
+      </div>
     </header>
 
-
     <!-- Section 2 boss -->
-    <section class="h-fit w-full py-10 bg-white flex justify-center">
+    <section class="h-fit w-full py-10 mt-28 bg-white flex justify-center">
       <div
         class="container w-fit mx-[10%] max-sm:mx-auto flex flex-col justify-center"
       >
