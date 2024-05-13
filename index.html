@@ -30,9 +30,9 @@
   
   <body>
     <!-- Section 1: Ja - Header -->
-    <header class="w-screen h-fit">
-      <div class="bg-auto max-sm:bg-cover bg-no-repeat bg-center w-screen max-sm:h-[130vh] h-full absolute z-[-2] bg-[url('./ja-png/BG.png')]"></div>
-      <div class="bg-gradient bg-auto bg-no-repeat bg-center w-screen max-sm:h-[130vh] h-full absolute z-[-1] bg-gradient-to-l from-white from-0% to-80% to-[rgb(252,254,255,0.8)]"
+    <header class="w-full h-fit">
+      <div class="bg-auto max-sm:bg-cover bg-no-repeat bg-center w-full max-sm:h-[130vh] h-full absolute z-[-2] bg-[url('./ja-png/BG.png')]"></div>
+      <div class="bg-gradient bg-auto bg-no-repeat bg-center w-full max-sm:h-[130vh] h-full absolute z-[-1] bg-gradient-to-l from-white from-0% to-80% to-[rgb(252,254,255,0.8)]"
         ></div>
       <div class="head-container mx-[10%] items-center flex flex-col">
         <nav class="flex justify-between items-center h-28 w-full">
@@ -175,16 +175,14 @@
           >
             Explore <img src="./ja-png/arrow-white.png" />
           </button>
-        </div>
-        </div>
-        
+        </div>        
       </div>
     </header>
 
-    <!-- Section 2 boss -->
+    <!-- Section 2 services -->
     <section class="h-fit w-full py-10 mt-28 bg-white flex justify-center">
       <div
-        class="container w-fit mx-[10%] max-sm:mx-auto flex flex-col justify-center"
+        class="container sm:w-full w-fit mx-[10%] max-sm:mx-auto flex flex-col justify-center"
       >
         <!-- services title -->
         <div class="service-title flex justify-between items-end p-5">
@@ -210,7 +208,7 @@
           </a>
         </div>
         <div
-          class="services-container flex max-lg:flex-wrap gap-5 h-fit w-full justify-center items-start p-5"
+          class="services-container flex max-md:flex-row max-lg:flex-wrap gap-5 h-fit w-full justify-center items-start p-5"
         >
           <!-- services card 1 -->
           <div
@@ -232,7 +230,7 @@
           </div>
           <!-- services card 2 -->
           <div
-            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-md:hidden"
+            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-[925px]:hidden"
           >
             <div
               class="services-icon w-[80px] h-[80px] flex items-center justify-center rounded-3xl bg-[#fe5b3e10]"
@@ -250,7 +248,7 @@
           </div>
           <!-- services card 3 -->
           <div
-            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-md:hidden"
+            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-[1000px]:hidden"
           >
             <div
               class="services-icon w-[80px] h-[80px] flex items-center justify-center rounded-3xl bg-[#fe5b3e10]"
@@ -268,7 +266,7 @@
           </div>
           <!-- services card 4 -->
           <div
-            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-md:hidden"
+            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-[1000px]:hidden"
           >
             <div
               class="services-icon w-[80px] h-[80px] flex items-center justify-center rounded-3xl bg-[#fe5b3e10]"
@@ -432,7 +430,7 @@
     <!-- Section 4 kim -->
     <section
       id="destination"
-      class="w-screen h-[1094px] min-[1000px]:h-[888px] font-poppins bg-[#FEF9F3] flex flex-col max-[1000px]:justify-center min-[1000px]:flex-row gap-[30px] items-center relative"
+      class="w-full h-[1094px] min-[1000px]:h-[888px] font-poppins bg-[#FEF9F3] flex flex-col max-[1000px]:justify-center min-[1000px]:flex-row gap-[30px] items-center relative"
     >
       <div
         id="box-item"
@@ -555,7 +553,7 @@
 
     <!-- Section 5 RcNon -->
     <section
-      class="testimonial sm:w-screen sm:h-screen h-[100%] flex justify-center items-center"
+      class="testimonial sm:w-full sm:h-screen h-[100%] flex justify-center items-center"
     >
       <div
         class="w-[100%] h-[100%] mx-[10%] flex sm:flex-row sm:justify-between flex-col"
@@ -604,7 +602,7 @@
 
     <!-- Section 6 RcNon -->
     <section
-      class="places sm:w-screen sm:h-screen h-[341px] flex justify-center items-center m-0 p-0 box-border"
+      class="places sm:w-full sm:h-screen h-[341px] flex justify-center items-center m-0 p-0 box-border"
     >
       <div
         class="sm:w-[100vw] sm:h-[100vh] w-[375px] h-[341px] mx-[10%] flex flex-col sm:justify-around justify-center items-center sm:gap-0 gap-10"
@@ -690,11 +688,11 @@
 
     <!-- Section 7 Tle -->
     <section>
-      <div class="bg-auto bg-no-repeat bg-bottom max-sm:bg-cover w-screen max-sm:h-screen h-screen absolute z-[-2] bg-[url('./img/Rectangle754.png')]"></div>
-      <div class="bg-gradient bg-auto bg-no-repeat bg-bottom w-screen max-sm:h-screen h-screen absolute z-[-1] bg-gradient-to-b from-white from-10% to-80% to-[rgb(252,254,255,0.6)]"
+      <div class="bg-auto bg-no-repeat bg-bottom max-sm:bg-cover w-full max-sm:h-screen h-screen absolute z-[-2] bg-[url('./img/Rectangle754.png')]"></div>
+      <div class="bg-gradient bg-auto bg-no-repeat bg-bottom w-full max-sm:h-screen h-screen absolute z-[-1] bg-gradient-to-b from-white from-10% to-80% to-[rgb(252,254,255,0.6)]"
         ></div>
           <div
-            class="min-h-screen flex flex-col items-start justify-end max-w-screen mx-[10%]"
+            class="min-h-screen flex flex-col items-start justify-end max-w-full mx-[10%]"
           >
             <div>
               <!--font-poppins text-4xl font-bold ttext-start mt-64 mb-10 w-[327px] md:w-[300px]-->
