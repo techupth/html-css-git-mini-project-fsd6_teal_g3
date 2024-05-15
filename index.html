@@ -2,11 +2,866 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              "baloo-bhai": ["Baloo Bhai 2", "sans-serif"],
+              "dm-sans": ["DM Sans", "sans-serif"],
+              "paytone-one": ["Paytone One", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Travel Company</title>
   </head>
+
   <body>
-    <!-- Start Coding here -->
+    <!-- Section 1: Ja - Header -->
+    <header class="w-full h-fit">
+      <div class="bg-auto max-sm:bg-cover bg-no-repeat bg-top w-full max-sm:h-[130vh] h-full absolute z-[-2] bg-[url('./ja-png/BG.png')]"></div>
+      <div class="bg-gradient bg-auto bg-no-repeat bg-top w-full max-sm:h-[130vh] h-full absolute z-[-1] bg-gradient-to-l from-white from-0% to-80% to-[rgb(252,254,255,0.8)]"
+        ></div>
+      <div class="head-container mx-[10%] items-center flex flex-col">
+        <nav class="flex justify-between items-center h-28 w-full">
+          <div class="logo"><img src="./ja-png/logo.png" class="max-[375px]:w-[73px]"/></div>
+          <div id="menu" class="w-[446px] max-[1000px]:hidden">
+            <ul
+              class="flex justify-between font-medium text-lg text-[#a8a8a8] font-dm-sans"
+            >
+              <li
+                class="hover:text-[#221314] focus:text-[#221314] cursor-pointer hover:underline hover:decoration-[#FF6525] hover:decoration-2 hover:underline-offset-8">Home</li>
+              <li class="hover:text-[#221314] focus:text-[#221314] cursor-pointer hover:underline hover:decoration-[#FF6525] hover:decoration-2 hover:underline-offset-8">About</li>
+              <li class="hover:text-[#221314] focus:text-[#221314] cursor-pointer hover:underline hover:decoration-[#FF6525] hover:decoration-2 hover:underline-offset-8">Blog</li>
+              <li class="hover:text-[#221314] focus:text-[#221314] cursor-pointer hover:underline hover:decoration-[#FF6525] hover:decoration-2 hover:underline-offset-8">
+                Tour Package
+              </li>
+            </ul>
+          </div>
+          <button
+            class="h-[58px] w-[160px] rounded-xl p-1 bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] text-[16px] font-bold text-white font-dm-sans max-[1000px]:hidden"
+          >Contact Us</button>
+            <img src="./ja-png/menu-icon.png" class="min-[1000px]:hidden" />
+
+        </nav>
+        <div class="hero-container flex flex-row justify-between max-lg:flex-col-reverse max-lg:items-center gap-20 mt-28 max-lg:mt-10 w-full">
+          <div class="hero-title-container flex flex-col justify-center gap-5 self-start sm:w-[45%] sm:self-center">
+            <h1 class="hero-title text-[#221314] font-paytone-one 
+            text-[5vw] max-sm:text-4xl
+            leading-tight">Fuel Mind <br>
+              by Travel</h1>
+            <p class="hero-subtitle text-[#5a7184] font-dm-sans text-lg max-xl:text-lg leading-loose max-sm:mb-4">Enthusiastically extend extensive <br class="sm:hidden" /> customer service <br class="max-sm:hidden">before best <br class="sm:hidden"> 
+            breed convergence completely.</p>
+          </div>
+          <div class="hero-moon-container sm:w-[45%] relative max-lg:flex justify-center">
+            <img
+                src="./ja-png/moon.png"
+                class="w-[75%] max-lg:w-[90%]"
+              />
+            <div class="box-container w-[29%] h-[40%] absolute top-[30%] sm:left-[-20%] left-[-5%] rounded-lg bg-white shadow-sm flex flex-col gap-2 items-left p-3 max-lg:hidden max-sm:block">
+                <div class="w-[100%] h-[50%] bg-[#c4c4c4] rounded-lg"></div>
+                <p
+                  class="font-dm-sans font-medium text-[10px] max-sm:text-[8px] max-sm:py-1 text-[#221314] self-start pl-[3%]"
+                >
+                  Mountain Scot
+                </p>
+                <img src="./ja-png/small-circle.png" />              
+              </div>
+              </div>  
+          </div>
+          <div
+          class="find-location w-[60vw] min-w-fit max-sm:w-[80vw] px-10 py-8 mt-[5%] flex self-end justify-between items-center bg-white shadow-[10px_30px_40px_-10px_rgba(0,0,0,0.05)] rounded-2xl max-lg:flex-col max-lg:self-center"
+        >
+          <div class="flex justify-center items-center max-lg:flex-col">
+            <div
+              id="location-box"
+              class="w-auto h-[54px] flex flex-col justify-between max-lg:px-10 pr-10 max-lg:mb-8 max-lg:mt-5 max-lg:items-center"
+            >
+              <div
+                id="topic-row"
+                class="w-full flex flex-row items-center gap-1.5"
+              >
+                <p
+                  id="topic"
+                  class="font-dm-sans font-bold  text-[#a8a8a8]"
+                >
+                  Location
+                </p>
+                <img src="./ja-png/arrow.png" class="w-fit h-fit pl-2" />
+              </div>
+              <p
+                class="w-auto h-[21px] font-dm-sans font-bold  text-[#221314] text-nowrap "
+              >
+                Cox’s Bazar
+              </p>
+            </div>
+            <img
+              src="./ja-png/line.png"
+              class="h-[36px] mt-2.5 max-lg:hidden"
+            />
+            <img
+              src="./ja-png/line-ho.png"
+              class="w-fit lg:hidden"
+            />
+
+            <div
+              id="date-box"
+              class="w-auto h-[54px] flex flex-col justify-between px-10 max-lg:mb-8 max-lg:mt-5 max-lg:items-center"
+            >
+              <div
+                id="topic-row"
+                class="flex flex-row w-fit items-center gap-1.5"
+              >
+                <p
+                  id="topic"
+                  class="font-dm-sans font-bold  text-[#a8a8a8]"
+                >
+                  Date
+                </p>
+                <img src="./ja-png/arrow.png" class="w-fit h-fit pl-2" />
+              </div>
+              <p
+                class="w-auto h-[21px] lg:min-w-[100px] font-dm-sans font-bold  text-[#221314] text-nowrap"
+              >
+                Mon, 14 Mar - Thu, 17 Mar
+              </p>
+            </div>
+            <img
+              src="./ja-png/line.png"
+              class="h-[36px] mt-2.5 max-lg:hidden"
+            />
+            <img
+              src="./ja-png/line-ho.png"
+              class="w-fit lg:hidden"
+            />
+            <div
+              id="price-box"
+              class="w-auto h-[54px] flex flex-col justify-between px-10 max-lg:mb-9 max-lg:mt-5 max-lg:items-center"
+            >
+              <div
+                id="topic-row"
+                class="flex flex-row w-fit items-center gap-1.5"
+              >
+                <p
+                  id="topic"
+                  class="font-dm-sans font-bold  text-nowrap text-[#a8a8a8]"
+                >
+                  Avg. Price
+                </p>
+                <img src="./ja-png/arrow.png" class="w-fit h-fit pl-2" />
+              </div>
+              <p
+                class="w-auto h-[21px] font-dm-sans font-bold  text-[#221314] text-nowrap"
+              >
+                $300 - $600
+              </p>
+            </div>
+          </div>
+
+          <button
+            class="w-[177px] h-[70px] rounded-[15px] bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] text-[16px] p-2 font-bold text-white font-dm-sans justify-self-end flex justify-center items-center gap-4"
+          >
+            Explore <img src="./ja-png/arrow-white.png" />
+          </button>
+        </div>        
+      </div>
+    </header>
+
+    <!-- Section 2 services -->
+    <section class="h-fit w-full py-10 mt-28 bg-white flex justify-center">
+      <div
+        class="container sm:w-full w-[80%] mx-auto flex flex-col justify-center"
+      >
+        <!-- services title -->
+        <div class="service-title flex justify-between items-end p-5">
+          <h2
+            class="font-popins font-bold text-5xl leading-tight max-lg:text-2xl font-poppins"
+          >
+            Start Your <br class="sm:hidden">Vacation
+            <br class="max-sm:hidden">with <br class="sm:hidden">Lost of
+            Services!
+          </h2>
+          <a class="flex items-center gap-3" href=""
+            ><p
+              class="text-orange-600 text-lg font-semibold font-dm-sans max-sm:w-16"
+            >
+              View All <span class="max-lg:hidden">Services</span>
+            </p>
+            <span class="arrow-right-icon">
+              <img
+                src="./services/arrow-right-icon.svg"
+                alt="arrow-right-icon"
+              />
+            </span>
+          </a>
+        </div>
+        <div class="services-container flex max-md:flex-row max-xl:flex-wrap gap-5 h-fit w-full justify-center items-start p-5">
+          <!-- services card 1 -->
+          <div
+            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0"
+          >
+            <div
+              class="services-icon w-[80px] h-[80px] flex items-center justify-center rounded-3xl bg-[#fe5b3e10]"
+            >
+              <div class="family-icon">
+                <img src="./services/family-icon.svg" alt="" />
+              </div>
+            </div>
+            <h3 class="services-title text-xl font-poppins font-semibold">
+              Family Vacations
+            </h3>
+            <p class="services-subtitle text-lg font-dm-sans font-light">
+              155 Properties
+            </p>
+          </div>
+          <!-- services card 2 -->
+          <div
+            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-[925px]:hidden"
+          >
+            <div
+              class="services-icon w-[80px] h-[80px] flex items-center justify-center rounded-3xl bg-[#fe5b3e10]"
+            >
+              <div class="scuba-icon">
+                <img src="./services/scuba-icon.svg" alt="scuba-icon" />
+              </div>
+            </div>
+            <h3 class="services-title text-xl font-poppins font-semibold">
+              Scuba Driving
+            </h3>
+            <p class="services-subtitle text-lg font-dm-sans font-light">
+              143 Properties
+            </p>
+          </div>
+          <!-- services card 3 -->
+          <div
+            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-[1000px]:hidden"
+          >
+            <div
+              class="services-icon w-[80px] h-[80px] flex items-center justify-center rounded-3xl bg-[#fe5b3e10]"
+            >
+              <div class="hunting-icon">
+                <img src="./services/hunting-icon.svg" alt="hunting-icon" />
+              </div>
+            </div>
+            <h3 class="services-title text-xl font-poppins font-semibold">
+              Hunting Trip
+            </h3>
+            <p class="services-subtitle text-lg font-dm-sans font-light">
+              122 Properties
+            </p>
+          </div>
+          <!-- services card 4 -->
+          <div
+            class="services-card flex flex-col items-center justify-center gap-2 w-[333px] h-[272px] bg-white rounded-3xl shadow-slate-800 border hover:shadow-2xl hover:border-0 max-[1000px]:hidden"
+          >
+            <div
+              class="services-icon w-[80px] h-[80px] flex items-center justify-center rounded-3xl bg-[#fe5b3e10]"
+            >
+              <div class="bike-icon">
+                <img src="./services/bike-icon.svg" alt="bike-icon" />
+              </div>
+            </div>
+            <h3 class="services-title text-xl font-poppins font-semibold">
+              Mountain Bike
+            </h3>
+            <p class="services-subtitle text-lg font-dm-sans font-light">
+              185 Properties
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 kim -->
+    <section
+      id="packages"
+      class="w-full max-[375px]:w-[375px] max-[375px]h-[804px] font-poppins flex justify-center"
+    >
+      <div
+        class="container w-[100%] mx-[10%] mt-[5%] pb-[5%] max-sm:mx-auto flex flex-col justify-between items-center"
+      >
+        <h1 class="font-[700] text-[48px] max-sm:text-[30px] text-center">
+          Our Upcoming<br>Tour Package
+        </h1>
+        <li
+          class="flex flex-row flex-wrap justify-center mt-[110px] gap-[30px]"
+        >
+          <ul id="eiffel-tower" class="relative flex flex-col items-center">
+            <div
+              id="rectangle"
+              class="w-[355px] h-[455px] min-[1200px]:w-[453px] min-[1200px]:h-[520px] bg-[#C4C4C4] border-0 rounded-[20px]"
+            >
+              <p
+                class="absolute left-[263px] top-[40px] min-[1200px]:left-[336px] min-[1200px]:top-[40px] text-[30px] font-[600] text-[#FFFFFF]"
+              >
+                $599
+              </p>
+            </div>
+
+            <div
+              id="name-place"
+              class="w-[355px] h-[62px] min-[1200px]:w-[415px] ml-[10px] flex gap-[30px] items-center mt-[24px]"
+            >
+              <figure class="flex gap-2 items-start">
+                <img
+                  src="./kim/Location.svg"
+                  alt="location"
+                  width="24"
+                  height="24"
+                />
+                <div class="max-[1200px]:w-[180px] max-[1200px]h-[62px]">
+                  <h1 class="text-[24px] font-[600]">Eiffel Tower</h1>
+                  <p class="font-dm-sans text-[18px] font-[400] text-[#5A7184]">
+                    5d - 4n
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <img
+                  src="./kim/Group 8260.svg"
+                  alt="5-star"
+                  width="100"
+                  height="16"
+                />
+              </figure>
+            </div>
+          </ul>
+
+          <ul id="big-bear-lake" class="relative max-[1200px]:hidden">
+            <div
+              id="rectangle"
+              class="w-[453px] h-[520px] bg-[#C4C4C4] border-0 rounded-[20px] mt-[-40px]"
+            >
+              <p
+                class="absolute top-0 left-[336px] text-[30px] font-[600] text-[#FFFFFF]"
+              >
+                $480
+              </p>
+            </div>
+
+            <div
+              id="name-place"
+              class="w-[415px] h-[62px] ml-[10px] flex justify-between items-center mt-[24px]"
+            >
+              <figure class="flex gap-2 items-start">
+                <img
+                  src="./kim/Location.svg"
+                  alt="location"
+                  width="24"
+                  height="24"
+                />
+                <div>
+                  <h1 class="text-[24px] font-[600]">Big Bear Lake</h1>
+                  <p class="font-dm-sans text-[18px] font-[400] text-[#5A7184]">
+                    5d - 4n
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <img
+                  src="./kim/Group 8260.svg"
+                  alt="5-star"
+                  width="120"
+                  height="20"
+                />
+              </figure>
+            </div>
+          </ul>
+
+          <ul id="colorado-spring" class="relative max-[1800px]:hidden">
+            <div
+              id="rectangle"
+              class="w-[453px] h-[520px] bg-[#C4C4C4] border-0 rounded-[20px]"
+            >
+              <p
+                class="absolute top-[40px] left-[336px] text-[30px] font-[600] text-[#FFFFFF]"
+              >
+                $550
+              </p>
+            </div>
+
+            <div
+              id="name-place"
+              class="w-[415px] h-[62px] ml-[10px] flex justify-between items-center mt-[24px]"
+            >
+              <figure class="flex gap-2 items-start">
+                <img
+                  src="./kim/Location.svg"
+                  alt="location"
+                  width="24"
+                  height="24"
+                />
+                <div>
+                  <h1 class="text-[24px] font-[600]">Colorado Springs</h1>
+                  <p class="font-dm-sans text-[18px] font-[400] text-[#5A7184]">
+                    5d - 4n
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <img
+                  src="./kim/Group 8260.svg"
+                  alt="5-star"
+                  width="120"
+                  height="20"
+                />
+              </figure>
+            </div>
+          </ul>
+        </li>
+        <button type="button">
+          <figure
+            class="w-[180px] h-[70px] bg-[#FE5B3E] border rounded-[15px] flex justify-center items-center mt-[40px]"
+          >
+            <img src="./kim/Group 5804.svg" alt="view-all" />
+          </figure>
+        </button>
+      </div>
+    </section>
+
+    <!-- Section 4 kim -->
+    <section
+      id="destination"
+
+      class="w-full h-screen lg:h-[888px] font-poppins bg-[#FEF9F3] flex flex-col  max-lg:justify-center lg:flex-row gap-[30px] items-center py-[50px] relative"
+    >
+      <div
+        id="box-item"
+        class="lg:order-2 min-[1920px]:static w-[30%] max-w-[574px] h-[100%]  max-lg:w-[324px] lg:ml-5 flex flex-col justify-center z-10"
+      >
+        <h1 class="text-[48px] font-[700]  max-lg:text-[24px]">
+          Most Popular <br>
+          Destination of Us!
+        </h1>
+        <p class="text-[18px] font-dm-sans font-[400] leading-[40px]">
+          Credibly unleash economically sound e-business with bleeding-edge
+          users. Uniquely simplify mission-critical benefits with cross-unit
+          manufactured products. Energistically re-engineer
+        </p>
+
+        <button type="button">
+          <figure
+            class=" max-lg:hidden w-[180px] h-[70px] bg-[#FE5B3E] border rounded-[15px] flex justify-center items-center"
+          >
+            <img src="./kim/Group 5804.svg" alt="view-all" />
+          </figure>
+        </button>
+      </div>
+
+      <div
+        id="Great Wall of China"
+        class="relative w-[20%] h-[50%] max-lg:w-[80%] max-w-[332px] max-lg:max-w-[375px] max-lg:h-[200%] lg:ml-[-110px] min-[1920px]:ml-0"
+      >
+        <div
+          id="rectangle"
+          class="w-[100%] h-[100%] max-lg:h-[100%] bg-[#C4C4C4] border-0 rounded-[20px]"
+        >
+          <div
+            id="name-place"
+            class="w-[80%] h-[20%] absolute top-[77%] left-[10%] text-[30px] font-[600] text-[#FFFFFF] flex justify-between items-center"
+          >
+            <div>
+              <h1 class="text-[20px] font-[600]">Great Wall of China</h1>
+              <p class="font-dm-sans text-[18px] font-[400] text-[##EAEAEA]">
+                Beijing, China
+              </p>
+            </div>
+            <figure>
+              <img
+                src="./kim/Group 8271.svg"
+                alt="5-star"
+                width="57"
+                height="28"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div id="Lake Powell" class="relative w-[20%] max-w-[332px] h-[50%] hidden lg:block">
+        <div
+          id="rectangle"
+          class="w-[100%] h-[100%] bg-[#C4C4C4] border-0 rounded-[20px] mt-[-10%]"
+        >
+          <div
+            id="name-place"
+            class="w-[80%] h-[20%] absolute top-[69%] left-[10%] text-[30px] font-[600] text-[#FFFFFF] flex justify-between items-center"
+          >
+            <div>
+              <h1 class="text-[20px] font-[600]">Lake Powell</h1>
+              <p class="font-dm-sans text-[18px] font-[400] text-[##EAEAEA]">
+                U.S.A
+              </p>
+            </div>
+            <figure>
+              <img
+                src="./kim/Group 8271.svg"
+                alt="5-star"
+                width="57"
+                height="28"
+              />
+              <img
+                src="./kim/Arrow.svg"
+                alt="arrow"
+                width="110"
+                height="48"
+                class="lg:absolute top-[120px] left-[30%]  max-lg:hidden"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div id="Deep Creek Lake" class="relative w-[20%] max-w-[332px] h-[50%] hidden lg:block">
+        <div
+          id="rectangle"
+          class="w-[100%] h-[100%] bg-[#C4C4C4] border-0 rounded-[20px]"
+        >
+          <div
+            id="name-place"
+            class="w-[80%] h-[20%] absolute top-[77%] left-[10%] text-[30px] font-[600] text-[#FFFFFF] flex justify-between items-center"
+          >
+            <div>
+              <h1 class="text-[20px] font-[600]">Deep Creek Lake</h1>
+              <p class="font-dm-sans text-[18px] font-[400] text-[##EAEAEA]">
+                Maryland
+              </p>
+            </div>
+            <figure>
+              <img
+                src="./kim/Group 8271.svg"
+                alt="5-star"
+                width="57"
+                height="28"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+      <figure>
+        <img
+          src="./kim/Group 5829.svg"
+          alt="3-dot"
+          class="hidden  max-lg:block"
+        />
+      </figure>
+      <button type="button">
+        <figure
+          class="lg:hidden w-[180px] h-[70px] bg-[#FE5B3E] border rounded-[15px] flex justify-center items-center"
+        >
+          <img src="./kim/Group 5804.svg" alt="view-all" />
+        </figure>
+      </button>
+    </section>
+
+    <!-- Section 5 RcNon -->
+    <section
+      class="testimonial sm:w-full sm:h-screen h-[100%] flex justify-center items-center"
+      <div
+        class="w-[100%] h-[100%] mx-[10%] flex sm:flex-row sm:justify-between flex-col"
+      >
+        <div
+          class="left-section sm:w-[45%] flex flex-col justify-center sm:mt-0 mt-[95px]"
+        >
+          <img src="./.svg/Img.svg" alt="orange-circle-img" class="w-[90%]" />
+        </div>
+        <div
+          class="right-section sm:mt-[100px] mt-[30px] sm:w-[45%] flex flex-col justify-center"
+        >
+          <div class="text-title">
+            <p
+              class="font-poppins text-[#221314] sm:text-5xl text-2xl font-bold"
+            >
+              Feedback from
+            </p>
+            <p
+              class="font-poppins text-[#221314] sm:text-5xl text-2xl font-bold"
+            >
+              Our Customers
+            </p>
+          </div>
+          <p
+            class="sm:text-[24px] text-[20px] text-[#221314] font-semibold sm:mt-[40px] sm:mb-[24px] mt-[30px] mb-[16px]"
+          >
+            “I've Went ot America from Tripp Play about 1 years ago. Tripp make
+            the prototyping process so easy and faster. I feel this is the best
+            apps for Prototyping use”
+          </p>
+          <p class="font-dm-sans text-lg text-[#5A7184]">
+            — Ferdous - CEO of Coco
+          </p>
+          <div class="arrow-button sm:mt-[50px] mt-[24px] flex gap-[22px]">
+            <button class="left-button w-9 h-9 flex justify-center items-center rounded-full rotate-180 p-[2px] bg-[#FEAD9E] hover:bg-[#FE5B3E]">
+              <img src="./.svg/arrow_right_alt.svg" alt="" />
+            </button>
+            <button class="right-button w-9 h-9 flex justify-center items-center rounded-full p-[2px] bg-[#FEAD9E] hover:bg-[#FE5B3E]">
+              <img src="./.svg/arrow_right_alt.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 RcNon -->
+    <section
+      class="places sm:w-full sm:h-screen h-[341px] flex justify-center items-center m-0 p-0 box-border"
+    >
+      <div
+        class="sm:w-[100vw] sm:h-[100vh] w-[375px] h-[341px] mx-[10%] flex flex-col sm:justify-around justify-center items-center sm:gap-0 gap-10"
+      >
+        <div
+          class="text-title2 flex flex-col justify-center items-center sm:gap-5 sm:mt-[70px] mt-[10px]"
+        >
+          <p class="font-poppins text-[#221314] sm:text-5xl text-2xl font-bold">
+            World Top Visiting
+          </p>
+          <p class="font-poppins text-[#221314] sm:text-5xl text-2xl font-bold">
+            Place in 2021
+          </p>
+        </div>
+        <div class="map mx-[10%] relative">
+          <img src="./.svg/Map.svg" alt="Map" class="w-[100vw] h-[auto]" />
+          <div class="places">
+            <div
+              class="mexico absolute bottom-[34%] left-[11%] flex flex-col justify-center items-center"
+            >
+              <img src="./.svg/Mexico.svg" alt="mexico-flag" class="w-[10vw]" />
+              <div
+                class="absolute bottom-[0vw] left-[2.8vw] text-center sm:flex sm:flex-col hidden w-[4.2vw]"
+              >
+                <p
+                  class="font-poppins text-[#221314] sm:text-[1vw] font-semibold"
+                >
+                  Mexico
+                </p>
+                <p
+                  class="font-poppins text-[#5A7184] sm:text-[1vw] font-normal"
+                >
+                  03 Tour
+                </p>
+              </div>
+            </div>
+            <div
+              class="France absolute bottom-[47%] left-[45%] flex flex-col justify-center items-center"
+            >
+              <img src="./.svg/France.svg" alt="france-flag" class="w-[10vw]" />
+              <div
+                class="absolute bottom-[0vw] left-[2.8vw] text-center sm:flex sm:flex-col hidden w-[4.2vw]"
+              >
+                <p
+                  class="font-poppins text-[#221314] sm:text-[1vw] font-semibold"
+                >
+                  France
+                </p>
+                <p
+                  class="font-poppins text-[#5A7184] sm:text-[1vw] font-normal"
+                >
+                  03 Tour
+                </p>
+              </div>
+            </div>
+            <div
+              class="Australia absolute bottom-[10%] right-[6%] flex flex-col justify-center items-center"
+            >
+              <img
+                src="./.svg/Australia.svg"
+                alt="australia-flag"
+                class="w-[10vw]"
+              />
+              <div
+                class="absolute bottom-[0vw] right-[3.2vw] text-center sm:flex sm:flex-col hidden w-[4.2vw]"
+              >
+                <p
+                  class="font-poppins text-[#221314] sm:text-[1vw] font-semibold"
+                >
+                  Australia
+                </p>
+                <p
+                  class="font-poppins text-[#5A7184] sm:text-[1vw] font-normal"
+                >
+                  02 Tour
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7 Tle -->
+    <section>
+      <div class="bg-auto bg-no-repeat bg-bottom max-sm:bg-cover w-full max-sm:h-screen h-screen absolute z-[-2] bg-[url('./img/Rectangle754.png')]"></div>
+      <div class="bg-gradient bg-auto bg-no-repeat bg-bottom w-full max-sm:h-screen h-screen absolute z-[-1] bg-gradient-to-b from-white from-10% to-80% to-[rgb(252,254,255,0.6)]"
+        ></div>
+          <div
+            class="min-h-screen flex flex-col items-start justify-end max-w-full mx-[10%]"
+          >
+            <div>
+              <!--font-poppins text-4xl font-bold ttext-start mt-64 mb-10 w-[327px] lg:w-[300px]-->
+              <h1
+                class="font-poppins text-4xl font-bold text-start mt-64 mb-10 w-[295px] lg:w-[375px]"
+              >
+                Subscribe <br>for every tour<br>News & Tips
+              </h1>
+              <div
+                class="bg-white rounded-xl mb-20 flex flex-row justify-between shadow-2xl"
+              >
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter Your Email"
+                  class="max-sm:p-1 p-4 sm:w-[355px] border-white bg-white ml-2 rounded-xl"
+                />
+                <div>
+                  <button
+                    class="text-white text-center mt-2 mb-2 mr-2 p-[15px] w-[160px] h-[70px] border bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl"
+                  >
+                    Subscribe 🡒
+                  </button>
+                </div>
+              </div>
+            </div>
+            <footer
+              class="justify-start flex flex-col items-start bg-transparent py-4 mt-10"
+            >
+              <div><img src="img/TRIP.png" /></div>
+              <br>
+              <div class="flex min-h-screen-sm sm:flex-row flex-col items-center">
+                <!--flex min-h-screen-sm sm:flex-row flex-col-->
+                <p class="font-poppins mr-32 lg:w-[291px] w-[147px]">
+                  <!-- mr-32 sm:w-64 w-32"-->
+                  Copyright©Tripp. All right reserved
+                </p>
+                <div class="flex max-sm:mt-3">
+                  <div class="flex mr-5 p-1 bg-gray-200 rounded-full">
+                    <svg
+                      width="42"
+                      height="40"
+                      viewBox="0 0 42 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_30)">
+                        <rect
+                          opacity="0.5"
+                          width="42"
+                          height="40"
+                          rx="20"
+                          fill="#E2E2EA"
+                        />
+                        <path
+                          d="M28.9583 20.5208C28.9583 20.0208 28.8958 19.6458 28.8333 19.2395H21.4583V21.8958H25.8333C25.6771 23.052 24.5208 25.2395 21.4583 25.2395C18.8021 25.2395 16.6458 23.052 16.6458 20.3333C16.6458 15.9895 21.7708 13.9895 24.5208 16.6458L26.6458 14.6145C25.3021 13.3645 23.5208 12.5833 21.4583 12.5833C17.1458 12.5833 13.7083 16.052 13.7083 20.3333C13.7083 24.6458 17.1458 28.0833 21.4583 28.0833C25.9271 28.0833 28.9583 24.9583 28.9583 20.5208Z"
+                          fill="#221314"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_30">
+                          <rect width="42" height="40" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="flex mr-5 p-1 bg-gray-200 rounded-full">
+                    <svg
+                      width="42"
+                      height="40"
+                      viewBox="0 0 42 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_35)">
+                        <rect
+                          opacity="0.5"
+                          width="42"
+                          height="40"
+                          rx="20"
+                          fill="#E2E2EA"
+                        />
+                        <path
+                          d="M27.6771 17.0833C28.3021 16.6145 28.8646 16.052 29.3021 15.3958C28.7396 15.6458 28.0833 15.8333 27.4271 15.8958C28.1146 15.4895 28.6146 14.8645 28.8646 14.0833C28.2396 14.4583 27.5208 14.7395 26.8021 14.8958C26.1771 14.2395 25.3333 13.8645 24.3958 13.8645C22.5833 13.8645 21.1146 15.3333 21.1146 17.1458C21.1146 17.3958 21.1458 17.6458 21.2083 17.8958C18.4896 17.7395 16.0521 16.427 14.4271 14.4583C14.1458 14.927 13.9896 15.4895 13.9896 16.1145C13.9896 17.2395 14.5521 18.2395 15.4583 18.8333C14.9271 18.802 14.3958 18.677 13.9583 18.427V18.4583C13.9583 20.052 15.0833 21.3645 16.5833 21.677C16.3333 21.7395 16.0208 21.802 15.7396 21.802C15.5208 21.802 15.3333 21.7708 15.1146 21.7395C15.5208 23.052 16.7396 23.9895 18.1771 24.0208C17.0521 24.8958 15.6458 25.427 14.1146 25.427C13.8333 25.427 13.5833 25.3958 13.3333 25.3645C14.7708 26.302 16.4896 26.8333 18.3646 26.8333C24.3958 26.8333 27.6771 21.8645 27.6771 17.5208C27.6771 17.3645 27.6771 17.2395 27.6771 17.0833Z"
+                          fill="#221314"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_35">
+                          <rect width="42" height="40" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="flex mr-5 p-1 bg-gray-200 rounded-full">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_40)">
+                        <rect
+                          opacity="0.5"
+                          width="40"
+                          height="40"
+                          rx="20"
+                          fill="#E2E2EA"
+                        />
+                        <path
+                          d="M20.3333 16.7395C18.3333 16.7395 16.7396 18.3645 16.7396 20.3333C16.7396 22.3333 18.3333 23.927 20.3333 23.927C22.3021 23.927 23.9271 22.3333 23.9271 20.3333C23.9271 18.3645 22.3021 16.7395 20.3333 16.7395ZM20.3333 22.677C19.0521 22.677 17.9896 21.6458 17.9896 20.3333C17.9896 19.052 19.0208 18.0208 20.3333 18.0208C21.6146 18.0208 22.6458 19.052 22.6458 20.3333C22.6458 21.6458 21.6146 22.677 20.3333 22.677ZM24.8958 16.6145C24.8958 16.1458 24.5208 15.7708 24.0521 15.7708C23.5833 15.7708 23.2083 16.1458 23.2083 16.6145C23.2083 17.0833 23.5833 17.4583 24.0521 17.4583C24.5208 17.4583 24.8958 17.0833 24.8958 16.6145ZM27.2708 17.4583C27.2083 16.3333 26.9583 15.3333 26.1458 14.5208C25.3333 13.7083 24.3333 13.4583 23.2083 13.3958C22.0521 13.3333 18.5833 13.3333 17.4271 13.3958C16.3021 13.4583 15.3333 13.7083 14.4896 14.5208C13.6771 15.3333 13.4271 16.3333 13.3646 17.4583C13.3021 18.6145 13.3021 22.0833 13.3646 23.2395C13.4271 24.3645 13.6771 25.3333 14.4896 26.177C15.3333 26.9895 16.3021 27.2395 17.4271 27.302C18.5833 27.3645 22.0521 27.3645 23.2083 27.302C24.3333 27.2395 25.3333 26.9895 26.1458 26.177C26.9583 25.3333 27.2083 24.3645 27.2708 23.2395C27.3333 22.0833 27.3333 18.6145 27.2708 17.4583ZM25.7708 24.4583C25.5521 25.0833 25.0521 25.552 24.4583 25.802C23.5208 26.177 21.3333 26.0833 20.3333 26.0833C19.3021 26.0833 17.1146 26.177 16.2083 25.802C15.5833 25.552 15.1146 25.0833 14.8646 24.4583C14.4896 23.552 14.5833 21.3645 14.5833 20.3333C14.5833 19.3333 14.4896 17.1458 14.8646 16.2083C15.1146 15.6145 15.5833 15.1458 16.2083 14.8958C17.1146 14.5208 19.3021 14.6145 20.3333 14.6145C21.3333 14.6145 23.5208 14.5208 24.4583 14.8958C25.0521 15.1145 25.5208 15.6145 25.7708 16.2083C26.1458 17.1458 26.0521 19.3333 26.0521 20.3333C26.0521 21.3645 26.1458 23.552 25.7708 24.4583Z"
+                          fill="#221314"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_40">
+                          <rect width="40" height="40" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="flex mr-5 p-1 bg-gray-200 rounded-full">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_45)">
+                        <rect
+                          opacity="0.5"
+                          width="40"
+                          height="40"
+                          rx="20"
+                          fill="#E2E2EA"
+                        />
+                        <path
+                          d="M26.3333 13.3333H14.3021C13.7708 13.3333 13.3333 13.802 13.3333 14.3645V26.3333C13.3333 26.8958 13.7708 27.3333 14.3021 27.3333H26.3333C26.8646 27.3333 27.3333 26.8958 27.3333 26.3333V14.3645C27.3333 13.802 26.8646 13.3333 26.3333 13.3333ZM17.5521 25.3333H15.4896V18.677H17.5521V25.3333ZM16.5208 17.7395C15.8333 17.7395 15.3021 17.2083 15.3021 16.552C15.3021 15.8958 15.8333 15.3333 16.5208 15.3333C17.1771 15.3333 17.7083 15.8958 17.7083 16.552C17.7083 17.2083 17.1771 17.7395 16.5208 17.7395ZM25.3333 25.3333H23.2396V22.0833C23.2396 21.3333 23.2396 20.3333 22.1771 20.3333C21.0833 20.3333 20.9271 21.177 20.9271 22.052V25.3333H18.8646V18.677H20.8333V19.5833H20.8646C21.1458 19.052 21.8333 18.4895 22.8333 18.4895C24.9271 18.4895 25.3333 19.8958 25.3333 21.677V25.3333Z"
+                          fill="#221314"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_45">
+                          <rect width="40" height="40" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+      </div>
+    </section>
   </body>
 </html>
